@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="스카이패스, 사전좌석 배정, 항공권 예매, 수하물 안내">
+  <meta name="description" content="항공 스케줄, 스카이패스, 할인 항공권, 여행상품 안내">
+  <meta name="Robots" content="Index, Follow">
+  <meta http-equiv="Subject" content="국내, 해외 여행정보, 좌석예매">
+  <meta http-equiv="title" content="대한항공">
+  <title>대한항공 - 모바일웹(앱)</title>
+  <!-- 파비콘 -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- css초기화 -->
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+  <!-- 공통서식 -->
+  <link rel="stylesheet" href="./css/common.css" type="text/css">
+  <!-- 메인 서식 -->
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
+  <!-- swiper서식 -->
+  <link rel="stylesheet" href="./css/swiper.css" type="text/css">
+</head>
+<body>
+  <!-- 상단헤더영역 -->
+  <header>
+    <!-- 로고 -->
+    <h1>
+      <a href="index.html" title="상단로고">
+        <img src="./images/txt_logo.png" alt="상단로고">
+      </a>
+    </h1>
+    <!-- 토글버튼 클릭시 nav나오게 하기
+      1. css로, 체크박스에 체크하면 nav나오게 하기
+      2. javascript,jquery로, span태그(toggle)클릭시 nav나오게 하기
+    --> 
+    <label class="toggle_label" for="toggle_btn">토글버튼</label>
+    <input id="toggle_btn" type="checkbox">
+    <div id="gnb">
+      <label id="close_btn" for="toggle_btn">닫기버튼</label>
+      <div>
+        <a class="logout_btn" href="./php/logout.php" title="로그아웃">로그아웃</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#none" title="메뉴1">메뉴1</a></li>
+          <li><a href="#none" title="메뉴2">메뉴2</a></li>
+          <li><a href="#none" title="메뉴3">메뉴3</a></li>
+          <li><a href="#none" title="메뉴4">메뉴4</a></li>
+          <li><a href="#none" title="메뉴5">메뉴5</a></li>
+          <li><a href="#none" title="메뉴6">메뉴6</a></li>
+          <li><a href="#none" title="메뉴7">메뉴7</a></li>
+        </ul>
+      </nav>
+    </div>
+    <a href='./login.php' title='로그인' class='login_btn'>로그인</a>";
+  
+    
+
+  </header>
+  <!-- 메인콘텐츠영역 -->
+  <main>
+    <section>
+      <h2>메인섹션</h2>
+      <div class="wrap">
+        <div class="swiper mySwiper item">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" title="바로가기"><img src="./images/banner01.jpg" alt="슬라이드이미지"></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" title="바로가기"><img src="./images/banner02.jpg" alt="슬라이드이미지"></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" title="바로가기"><img src="./images/banner03.jpg" alt="슬라이드이미지"></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" title="바로가기"><img src="./images/banner04.jpg" alt="슬라이드이미지"></a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="item">
+          <a href="#" title="바로가기"><img src="./images/m_img01.jpg" alt=""></a>
+        </div>
+        <div class="item">
+          <a href="#" title="바로가기"><img src="./images/m_img02.jpg" alt=""></a>
+        </div>
+        <div class="item">
+          <a href="#" title="바로가기"><img src="./images/m_img03.jpg" alt=""></a>
+        </div>
+        <div class="item">
+          <a href="#" title="바로가기"><img src="./images/m_img04.jpg" alt=""></a>
+        </div>
+        <div class="item">
+          <a href="#" title="바로가기"><img src="./images/m_img05.jpg" alt=""></a>
+        </div>
+      </div>
+      <div class="skypass">
+        <div><a href="./login.php" title="로그인 바로가기"><img src="./images/skypass.jpg" alt="로그인바로가기 이미지"></a></div>
+      </div>
+    </section>
+  </main>
+  <!-- 푸터영역 -->
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="#" title="바로가기"><b>개인정보취급방침</b></a></li>
+        <li><a href="#" title="바로가기">PC버전보기</a></li>
+        <li><a href="#" title="바로가기">앱다운로드</a></li>
+      </ul>
+    </nav>
+    <address>
+      <p>Copyright&copy;2024 KOREAN AIR Allrights reserved.</p>
+      <p>사업자등록번호 0000-000-0000 통신판매업 신고번호: 강서 제00-000</p>
+    </address>
+  </footer>
+
+  <!-- swiper 스크립트 -->
+  <script src="./script/swiper.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+</body>
+</html>
